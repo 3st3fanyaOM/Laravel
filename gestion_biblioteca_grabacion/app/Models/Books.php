@@ -9,11 +9,11 @@ class Books extends Model
 {
     use HasFactory;
 
-    public function author(){
+    public function author(){ //un libro puede tener muchos préstamos
         return $this->belongsTo(Author::class);
     }
 
-    public function loans(){
+    public function loans(){ //un libro puede tener muchas categorías
         return $this->hasMany(Loab::class);
     }
 }
