@@ -10,7 +10,7 @@ class Books extends Model
     use HasFactory;
 
     public function author(){ //un libro puede tener muchos préstamos
-        return $this->belongsTo(Author::class);
+        return $this->belongsTo(Authors::class);
     }
 
     public function loans(){ //un libro puede tener muchas categorías
