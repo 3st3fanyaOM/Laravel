@@ -7,4 +7,4 @@ import router from "./router";
 
 //Crear app
 
-createApp(HelloWorld).use(router).mount("#app");
+createApp(BookList).use(router).mount("#app");
